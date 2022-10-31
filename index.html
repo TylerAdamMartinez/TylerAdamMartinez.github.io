@@ -8,34 +8,58 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://TylerAdamMartinez.github.io/">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <script src="assets/js/router.js" type="module"></script>
   </head>
   <body>
-    <h1>Howdy, I'm <mark><i>Tyler Adam Martinez</i></mark></h1>
-    <h2>I am <span class="animate_typed"></span></h2>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Education</li>
-        <li>Experience</li>
-        <li>Projects</li>
-        <li>Resume</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <h3>Quick Links</h3>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/tyleradammartinez/" hreflang="en-us">LinkedIn</a></li>
-      <li><a href="https://github.com/TylerAdamMartinez" hreflang="en-us">GitHub</a></li>
-    </ul>
+    <div id="root"></div>
+    <div id="home">
+      <div id="hero">
+        <h1>Howdy,<br /> I'm <mark><i>Tyler Adam Martinez</i></mark></h1>
+        <h2>I am <span class="animate_typed"></span></h2>
+        <nav class="nav-menu">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Education</li>
+            <li>Experience</li>
+            <li>Projects</li>
+            <li>Resume</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.linkedin.com/in/tyleradammartinez/" hreflang="en-us">
+              <img alt="Linkedin" src="assets/img/linkedin.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/TylerAdamMartinez" hreflang="en-us">
+              <img alt="GitHub" src="assets/img/github.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <svg version="1.1" class="svg-filters" style="display:none;">
+      <defs>
+        <filter id="marker-shape">
+          <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+        </filter>
+      </defs>
+    </svg>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     var typed = new Typed('.animate_typed', {
       strings: [ 
-        "Coder",
-        "Developer",
-        "Engineer",
+        "a coder.",
+        "a developer.",
+        "an engineer.",
       ],
       backSpeed: 100,
       typeSpeed: 100,
