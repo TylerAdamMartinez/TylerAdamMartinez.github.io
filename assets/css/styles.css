@@ -97,7 +97,20 @@ h1 {
 
 .nav-menu {
   margin-top: 35px;
+}
 
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: #12d640;
+}
+
+.nav-menu li:hover {
+  transform: scale(1.15);
+  cursor: pointer;
 }
 
 .nav-menu ul {
@@ -115,12 +128,6 @@ h1 {
 .nav-menu li {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
-}
-
-.nav-menu li:hover {
-  color: #12d640;
-  transform: scale(1.15);
-  cursor: pointer;
 }
 
 #me-img {
